@@ -1,7 +1,7 @@
 let students = [
-  { name: "Маша", grade: 5 },
-  { name: "Петя", grade: 3 },
-  { name: "Саша", grade: 4 }
+  { name: "Маша", grade: 5, status: "отличник"},
+  { name: "Петя", grade: 3, status: "не отличник"},
+  { name: "Саша", grade: 4, status: "отличник"}
 ];
 
 let topStudents = 0;
@@ -11,8 +11,7 @@ function isTopStudent(grade) {
 }
 
 for (let i = 0; i < students.length; i++) {
-  let status = isTopStudent(students[i].grade) ? "отличник" : "не отличник";
-  console.log(`${students[i].name}: оценка ${students[i].grade}, ${status}`);
+  console.log(`${students[i].name}: оценка ${students[i].grade}, ${students[i].status}`);
 
   if (isTopStudent(students[i].grade)) {
     topStudents++;
