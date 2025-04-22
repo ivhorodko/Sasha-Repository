@@ -7,7 +7,13 @@ let shoppingList = [
 let totalCost = 0;
 
 function calculateCost(price, count) {
-  return price * count;
+  let total = price * count;
+
+  if (count > 3) {
+    return total * 0.9;
+} else {
+    return total;
+}
 }
 
 shoppingList.forEach((i) => {
