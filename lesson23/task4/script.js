@@ -12,7 +12,7 @@ function calculateLoad(duration, intensity) {
 
 for (let i = 0; i < workouts.length; i++) {
   let load = calculateLoad(workouts[i].duration, workouts[i].intensity);
-  console.log(`${workouts[i].name}: нагрузка ${load}`);
+  console.log(`${workouts[i].name}: нагрузка ${load} интенсивность: ${workouts[i].intensity}`);
 
   if (load > 150) {
     highLoadCount++;
