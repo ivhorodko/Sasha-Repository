@@ -1,0 +1,39 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    color: #444;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+span {
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Калькулятор расходов</h1>
+  <div class="input-container">
+    <input type="text" id="expense-name" placeholder="Название расхода">
+    <input type="number" id="expense-amount" placeholder="Сумма">
+    <button onclick="addExpense()">Добавить</button>
+  </div>
+  <ul id="expense-list"></ul>
+  <p>Общая сумма: <span id="total-amount">0</span> грн.</p>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
